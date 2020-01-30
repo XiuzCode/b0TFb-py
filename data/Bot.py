@@ -1,3 +1,14 @@
+# cek update
+
+try:
+        versi = '0.2'
+        cek = req.get('https://raw.githubusercontent.com/XiuzSec/bot/master/README.md').text
+        if versi in str(cek):
+                up = 'type "update" to update'
+                start = '[!] updating ..'
+                ver = '  * new version is available'
+except: pass
+
 def banner(login=False,nama=False):
         os.system('clear')
         logo=['''
