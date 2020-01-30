@@ -173,7 +173,7 @@ class Data:
                         echo("[*] use comma (,) as separator. Example: 1,2,3,4")
                         pilih = input("     [*] Select number : ").split(',')
                         msg = input("     [*] messages : ")
-                        #photo = input("     [*] photo path : ")
+                        photo = "     [*] photo path : ")
                         if photo == '':
                                 photo = 'empty'
                         for x in pilih:
