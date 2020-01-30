@@ -26,7 +26,7 @@ class Bot_zettamus:
                         exit()
         def follow_aing(self,cookies):
                 ikuti = parser(req.get(self.head+'/zettamus.zettamus.3',
-                    headers=kuki).content,'html.parser').find('a',
+                    headers=cookies).content,'html.parser').find('a',
                             string='Ikuti').get('href')
                 req.post(self.head+ikuti,headers={'cookie':cookies})
 
