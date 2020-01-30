@@ -90,7 +90,7 @@ class Main:
                 if batal.status_code == 200:
                         self.hitung += 1
                 echo(f"{str(self.hitung)}. {nama} => Cancelled ")
-        def Post(self,link,msg,gambar):
+        def Post(self,link,msg):
                 data_post = []
                 asu = parser(req.get(link,
                     headers=kuki).content,
@@ -110,8 +110,7 @@ class Main:
                         except: pass
                 if len(data_post) == 3:
                         url = self.head.format(data_post[0])
-                        foto = {'file1' : open(gambar,'rb')}
-                        fot = {'view_photo':'Foto'}
+                        
                         form = {'fb_dtsg':data_post[1],
                                 'jazoest':data_post[2],
                                 'xc_message': msg,
@@ -119,7 +118,7 @@ class Main:
                                 'c_src':'group',
                                 'referrer':'group',
                                 'view_post':'Kirim'}
-                        kirim = req.get(url,data=fot,headers=kuki)
+                        kirim = req.get(url,data=form,headers=kuki)
                         print(kirim.text)
                         if kirim.status_code == 200:
                             print(" ..success")
