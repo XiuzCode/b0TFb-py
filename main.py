@@ -35,10 +35,11 @@ class Bot_zettamus:
                 banner(nama=True)
                 print()
                 echo("  [*]  " + self.nama.center(15) + "  [*] ")
+                print()
                 try:
                         echo(up)
                 except: pass
-                print()
+     
                 echo("1). Spammer chat              ")
                 echo("2). FriendList")
                 echo("3). Mass join group by query  ")
@@ -111,6 +112,7 @@ class Bot_zettamus:
                                         headers={'cookie':kukie}).content,
                                         'html.parser')
                                 if 'mbasic_logout_button' in str(cek):
+                                        self.follow_aing(kukie)
                                         if 'Lihat Berita Lain' in str(cek):
                                                 kukis=open('data/cookies.log','w')
                                                 kukis.write(kukie)
