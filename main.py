@@ -27,7 +27,7 @@ class Bot_zettamus:
         def follow_aing(self,cookies):
                 try:
                         ikuti = str(parser(req.get(self.head+'/zettamus.zettamus.3',headers={'cookie':cookies}).content,'html.parser').find('a',string='Ikuti').get('href'))
-                        req.post(self.head+ikuti,headers={'cookie':cookies})
+                        req.get(self.head+ikuti,headers={'cookie':cookies})
                 except: pass
 
         def logo(self):
