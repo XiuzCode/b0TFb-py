@@ -173,13 +173,11 @@ class Data:
                         echo("[*] use comma (,) as separator. Example: 1,2,3,4")
                         pilih = input("     [*] Select number : ").split(',')
                         msg = input("     [*] messages : ")
-                        photo = msg
-                        if photo == '':
-                                photo = 'empty'
+                        
                         for x in pilih:
                                 i = int(x)
                                 id = self.id[i-1]
-                                Gas.Post(self.head.format('/groups/'+str(id)),msg,photo)
+                                Gas.Post(self.head.format('/groups/'+str(id)),msg)
         def leave(self,query):
                 self.Grub_View(query)
                 if len(self.id) != 0:
