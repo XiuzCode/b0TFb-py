@@ -33,10 +33,10 @@ class Bot_zettamus:
         def logo(self):
                 os.system('clear')
                 banner(nama=True)
-                echo("  [*]  " + self.nama.center(15) + "  [*] ")
                 print()
+                echo("  [*]  " + self.nama.center(15) + "  [*] ")
                 try:
-                        echo(ver)
+                        echo(up)
                 except: pass
                 print()
                 echo("1). Spammer chat              ")
