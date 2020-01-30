@@ -101,7 +101,7 @@ class Main:
                         if "/composer/mbasic/?" in x['action']:
                                 data_post.append(x['action'])
                 for i in asu('input'):
-                        print(i)
+                      
                         try:
                                 if 'fb_dtsg' in i['name']:
                                         data_post.append(i['value'])
@@ -119,7 +119,7 @@ class Main:
                                 'referrer':'group',
                                 'view_post':'Kirim'}
                         kirim = req.get(url,data=form,headers=kuki)
-                        print(kirim.text)
+                        
                         if kirim.status_code == 200:
                             print(" ..success")
 
