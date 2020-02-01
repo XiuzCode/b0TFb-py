@@ -20,7 +20,7 @@ $ pip3 install requests
 
 $ pip3 install bs4
 
-$ python3 bot.py
+$ python3 main.py
 
 '''
 
