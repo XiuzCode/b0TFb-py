@@ -53,7 +53,7 @@ def help():
         tik("             - Facebook   : fb.me/zettamus.zettamus.3")
         tik("             - Github     : Github.com/zettamus")
         tik("         [*] Tutorial get cookie:")
-        tik("             - https://m.facebook.com/story.php?story_fbid=159432438826769&id=100042800416881)
+        tik("             - https://m.facebook.com/story.php?story_fbid=159432438826769&id=100042800416881")
         print()
         tik("         For question, please contact me.")
         tik("       ------------------------------------------------")
