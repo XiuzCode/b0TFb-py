@@ -30,6 +30,4 @@ $ python3 main.py
 
 - v.0.1
 
-first version
-
-there will definitely be an update
+Changelog: First version,There will definitely be an update
